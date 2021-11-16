@@ -23,5 +23,27 @@
             user.ReferralCode = investor.ReferralCode;
             return user;
         }
+
+        public static User GenerateInvestorProtoypeUser()
+        {
+            return new User
+            {
+                Id = Guid.NewGuid(),
+                AccessFailedCount = 0,
+                Email = "test@hgh.com",
+                EmailConfirmed = true,
+                IsAcive = true,
+                Person = new Person
+                {
+                    FirstName = string.Empty,
+                    LastName = string.Empty,
+                    NationalCode = string.Empty
+                },
+                LockoutEnable = false,
+                LockoutEnd = true,
+                PhoneNumberConfirmed = true,
+                UserName = string.Empty
+            };
+        }
     }
 }

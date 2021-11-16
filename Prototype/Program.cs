@@ -1,26 +1,9 @@
-﻿using Prototype;
-using System.Text.Json;
+﻿using Newtonsoft.Json;
+using Prototype;
 
 var investors = InvestorMock.GetInvestors().ToList();
 
-var userPrototype = new User
-{
-    Id = Guid.NewGuid(),
-    AccessFailedCount = 0,
-    Email = "test@hgh.com",
-    EmailConfirmed = true,
-    IsAcive = true,
-    Person = new Person
-    {
-        FirstName = string.Empty,
-        LastName = string.Empty,
-        NationalCode = string.Empty
-    },
-    LockoutEnable = false,
-    LockoutEnd = true,
-    PhoneNumberConfirmed = true,
-    UserName = string.Empty
-};
+var userPrototype = User.GenerateInvestorProtoypeUser();
 
 var users = new List<User>();
 
@@ -30,4 +13,4 @@ foreach (var investor in investors)
     users.Add(user);
 }
 
-Console.WriteLine(JsonSerializer.Serialize(users));
+Console.WriteLine(JsonConvert.SerializeObject(users, Formatting.Indented));
