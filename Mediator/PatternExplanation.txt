@@ -1,0 +1,1 @@
+﻿reference :  https://dotnettutorials.net/lesson/mediator-design-pattern/
