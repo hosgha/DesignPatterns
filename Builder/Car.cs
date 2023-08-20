@@ -1,6 +1,6 @@
 ﻿using Builder.Enums;
 
-namespace Builder.Models
+namespace Builder
 {
     // Product
     public class Car

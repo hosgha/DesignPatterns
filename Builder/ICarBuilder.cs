@@ -1,4 +1,4 @@
-﻿namespace Builder.Models
+﻿namespace Builder
 {
     // Builder
     public interface ICarBuilder
