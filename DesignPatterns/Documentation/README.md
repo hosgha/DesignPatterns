@@ -1,9 +1,7 @@
 ﻿#Design Pattern
 ##Factory Pattern
 
-Factory pattern is one of the most used design patterns in C#, This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
-
-In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface.
+A a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to decide which class to instantiate.
 
 Implementation
 We're going to create a Shape interface and concrete classes implementing the Shape interface. A factory class ShapeFactory is defined as a next step.

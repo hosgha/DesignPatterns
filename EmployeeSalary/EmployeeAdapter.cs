@@ -6,10 +6,10 @@ public class EmployeeAdapter : ThirdPartyBillingSystem, IEmployeeTarget
 {
     public void ProcessCompanySalary(string[,] employeesArray)
     {
-        string Id = null;
-        string Name = null;
-        string Designation = null;
-        string Salary = null;
+        string? Id = null;
+        string? Name = null;
+        string? Designation = null;
+        string? Salary = null;
 
         List<Employee> employeeList = new List<Employee>();
 
