@@ -1,35 +1,36 @@
 ﻿using Builder.Enums;
 
-namespace Builder.Models
+namespace Builder
 {
     // Concreate Builder
-    public class MarutiCarBuilder : ICarBuilder
+    public class SkodaCarBuilder : ICarBuilder
     {
         private Car _car;
 
-        public MarutiCarBuilder()
+        public SkodaCarBuilder()
         {
-            _car = new Car("Maruti");
+            _car = new Car("Skoda");
         }
 
         public void BuildBody()
         {
-            _car.CarBodyType = BodyType.HatchBack;
+            _car.CarBodyType = BodyType.Sedan;
         }
 
         public void BuildEngine()
         {
-            _car.CarEngineType = EngineType.Petrol;
+            _car.CarEngineType = EngineType.Diesal;
         }
 
         public void BuildSeats()
         {
-            _car.CarSeatType = SeatType.Regular;
+            _car.CarSeatType = SeatType.SemiSleeper;
         }
 
         public Car MyCar
         {
             get { return _car; }
+
         }
 
     }

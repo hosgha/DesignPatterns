@@ -1,4 +1,4 @@
-﻿namespace Builder.Models
+﻿namespace Builder
 {
     // Director 
     public class CarManufacturer

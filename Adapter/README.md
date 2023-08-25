@@ -1,0 +1,1 @@
+﻿https://www.c-sharpcorner.com/UploadFile/efa3cf/adapter-design-pattern-in-C-Sharp/
