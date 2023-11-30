@@ -1,7 +1,7 @@
 ﻿#Design Pattern
 ##Factory Pattern
 
-A a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to decide which class to instantiate.
+A creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to decide which class to instantiate.
 
 Implementation
 We're going to create a Shape interface and concrete classes implementing the Shape interface. A factory class ShapeFactory is defined as a next step.

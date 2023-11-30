@@ -10,7 +10,7 @@ namespace AbstractFactoryPattern
             Console.Title = "Abstract Factory Pattern";
             //=================(rounded IShape)=====================
             //get rounded IShape factory
-            AbstractFactory IShapeFactory1 = FactoryProducer.getFactory(true);
+            AbstractFactory IShapeFactory1 = FactoryProducer.getFactory(IsRounded);
             
             //get an object of IShape Rectangle
             IShape shape3 = IShapeFactory1.GetShape(ShapeType.Rectangle);
@@ -24,7 +24,7 @@ namespace AbstractFactoryPattern
 
             //=================(IShape)=====================
             //get IShape factory
-            AbstractFactory IShapeFactory = FactoryProducer.getFactory(false);
+            AbstractFactory IShapeFactory = FactoryProducer.getFactory(!IsRounded);
 
             //get an object of IShape Rounded Rectangle
             IShape shape1 = IShapeFactory.GetShape(ShapeType.Rectangle);
@@ -141,4 +141,6 @@ namespace AbstractFactoryPattern
         Rectangle,
         Square
     }
+
+    public bool IsRounded = true;
 }
