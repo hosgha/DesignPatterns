@@ -4,9 +4,10 @@ namespace AbstractFactoryPattern
 {
     //Step 6 : Use the FactoryProducer to get AbstractFactory in order to get factories of concrete classes by passing an information such as type.
     class Program
-    {        
+    {       
         static void Main(string[] args)
         {
+            bool IsRounded = true;
             Console.Title = "Abstract Factory Pattern";
             //=================(rounded IShape)=====================
             //get rounded IShape factory
@@ -141,6 +142,4 @@ namespace AbstractFactoryPattern
         Rectangle,
         Square
     }
-
-    public bool IsRounded = true;
 }
